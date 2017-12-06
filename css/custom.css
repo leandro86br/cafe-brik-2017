@@ -1,0 +1,262 @@
+/*
+    Author: Leandro.Zambelli@yahoo.com
+    2017
+*/
+
+html,body{height: 100%}
+
+body{background: #000; overflow-x: hidden}
+
+section{padding:80px 0}
+
+@media (max-width:991px){
+    section{padding: 30px 0}
+}
+
+hr{border-style:dashed; border-color: #333}
+
+a{color: #dc3545}
+a:hover{color: #bd2130}
+
+a[href^="tel:"]:hover {text-decoration: none}
+a[href^="mailto:"]:hover {text-decoration: none}
+
+
+/* =Bootstrap Reset */
+
+.btn{border-radius: 50px; padding:14px 50px 17px 50px}
+.btn-dark{background-color: #111; border-color: #111}
+.btn-outline-light{background-color: none; border-color: #BB0B24!important}
+.btn-outline-light:hover{background-color: none; border-color: #fff}
+.btn-outline-light:focus{background-color: #000; box-shadow: 0 0 0 0.2rem darkred}
+
+.btn-sm, .btn-group-sm > .btn {padding: 8px 40px 11px 40px; font-size: 0.875rem; border-radius: 50px}
+
+[class*="btn-outline"]{border:2px solid}
+
+
+/*= BaguetteBox Reset */
+
+.gallery a:focus{outline: none}
+
+#baguetteBox-overlay .full-image img {border-radius: 6px}
+
+.baguetteBox-button polyline{stroke: #fff}
+.baguetteBox-button line{stroke: #fff}
+.baguetteBox-button:hover polyline{stroke: #a99775}
+.baguetteBox-button:hover line{stroke: #a99775}
+.baguetteBox-button {background-color: #000}
+.baguetteBox-button:focus, .baguetteBox-button:hover {background-color: #111; outline: none}
+
+
+/* =CLASSES */
+
+.relative{position: relative}
+.absolute{position: absolute}
+.fixed{position: fixed; z-index: 10}
+.cursor{cursor: pointer}
+
+.svg-head{position: absolute; bottom: 0; width: 100%; height: 140px; z-index: 3}
+.svg-content{position: absolute; top: 0; width: 100%; height: 70px}
+.svg-foot {position: absolute; bottom: 0; width: 100%; height: 70px}
+
+.font-dosis{font-family: "Dosis", sans-serif}
+
+.no-border{border: 0}
+.border-sides{border-left: 1px dashed #444; border-right: 1px dashed #444}
+
+@media (max-width: 767px) {
+    .border-sides{border: none}
+}
+
+.no-padding{padding: 0}
+.padding-content{padding: 180px 0}
+
+.bg-header{
+    background:url(../img/bg/bg-header.jpg) no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+@media (max-width:767px){
+    .bg-header{background-attachment: scroll}
+}
+
+.bg-paralax {
+    background: url(../img/bg/bg-paralax.jpg) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff!important;
+    text-shadow: 0 0 10px #000
+}
+
+.bg-paralax a{color: #a99775}
+.bg-paralax a:hover{color: #c8bda7}
+
+@media (max-width:767px){
+    .bg-paralax{background-attachment: scroll}
+}
+
+.bg-overlay-header {
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.9) 35%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 35%,rgba(255,255,255,0) 100%);
+    height: 100%;
+}
+
+@media (max-width:767px){
+    .bg-overlay-header{
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0.9) 50%,rgba(255,255,255,0) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,0.9) 50%,rgba(255,255,255,0) 100%);
+    }
+}
+
+.bg-overlay-content{background: rgba(0,0,0,0.5); height: 100%}
+
+.space{margin: 60px 0}
+
+.text-lg{font-size:2.5em}
+
+.push-down-15{margin-top: 15px}
+.push-down-40{margin-top: 40px}
+.push-down-60{margin-top: 60px}
+.push-down-120{margin-top: 120px}
+
+@media (max-width:767px){
+    .at-sm-center{text-align: center}
+}
+
+@media (max-width:991px){
+    .at-md-center{text-align: center}
+}
+
+.img-fx img{transition: 0.3s ease}
+.img-fx img:hover{transform: scale(1.1)}
+
+.hide-me{visibility: hidden; opacity: 0}
+
+.back-top {
+    position:fixed;
+    bottom:0;
+    right:0;
+    padding:20px 10px 14px 24px;
+    background:#fff;
+    color:#000;
+    border-top-left-radius:100px;
+    transition: ease 0.2s
+}
+.back-top:hover, .back-top:focus, .back-top:active{color:#fff}
+.back-top:hover{transition:all ease-in-out 0.1s; background:#333}
+
+@media (max-width:576px){
+    .d-xs-none{display: none}
+}
+
+
+/* =Typography */
+
+h1,h2,h3,h4,h5{font-family: 'Quicksand', sans-serif; font-weight: 300; color: #fff}
+
+h5{margin:2px 0 4px 0; color: #fff; font-size: 0.95em}
+
+@media (max-width:500px){
+    h1{font-size: 2em}
+    h2{font-size: 1.8em}
+    h3{font-size: 1.6em}
+    h4{font-size: 1.4em}
+}
+
+p{color: #eee}
+
+
+/* =Header and Nav */
+
+header{padding:0}
+
+.logo{margin: 190px 0}
+
+@media (max-width:767px){
+    .logo{margin: 160px 0}
+}
+
+@media (max-width:350px){
+    .logo{margin: 100px 0 160px 0}
+}
+
+nav {
+    position: absolute;
+    top: -350px;
+    left: -350px;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background: #fff;
+    transition: ease-in 0.4s;
+    border-bottom-right-radius: 100%
+}
+nav ul{list-style: none; margin-top: 0; padding: 90px 0 0 20px}
+nav li{display: block; text-align: left;}
+nav a {
+    font-family: 'Quicksand', sans-serif;
+    display: block;
+    padding:8px 0;
+    font-weight: 300;
+    color: #000;
+    font-size: 0.9em;
+}
+nav a:hover{color: #999; text-decoration: none}
+nav a:active{color: darkred}
+
+.btn-toggle-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:14px 29px 28px 11px;
+    background: #fff;
+    border-bottom-right-radius: 100px;
+    z-index: 2
+}
+
+.bar{display: block; margin:3px 0; width: 24px; height: 3px; background:#000; transition: ease-in 0.3s}
+
+.bar-close{background: #000}
+
+.bar-close .bar:nth-child(1) {
+    -webkit-transform:rotate(45deg) translate(5px,4px);
+    transform: rotate(45deg) translate(5px,4px);
+    background:#fff;
+}
+.bar-close .bar:nth-child(2) {visibility: hidden; opacity: 0}
+
+.bar-close .bar:nth-child(3) {
+    -webkit-transform:rotate(-45deg) translate(4px,-4px);
+    transform: rotate(-45deg) translate(4px,-4px);
+    background:#fff;
+}
+
+
+footer{padding: 70px 0; background: #000; color: #fff}
+footer ul{list-style: none; margin-top: 10px; padding: 0}
+footer a{color: #fff; font-size: 0.85em}
+footer a:hover{color: #bd2130; text-decoration: none}
+footer a[href^="tel:"] {color: #fff}
+footer a[href^="tel:"]:hover {color: #bd2130}
+
+
+@media (max-width: 767px) {
+    footer [class*="col"]{margin-bottom: 30px}
+}
+
+.footer-bottom {
+    clear:both;
+    margin:0;
+    padding:8px 0 0 0;
+    height:38px;
+    background:#121212;
+    font-size:0.85em!important;
+    color:#eee
+}
+.footer-bottom a{color:#eee}
+.footer-bottom a:hover{color:#bd2130}
