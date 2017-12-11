@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /wusage
+Disallow: /cgi-bin/
+
+Sitemap: http://www.brikcafe.com.br/sitemap.xml
