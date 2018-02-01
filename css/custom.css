@@ -7,15 +7,9 @@ html,body{height: 100%}
 
 body{background: #000; overflow-x: hidden}
 
-section{padding:80px 0}
-
-@media (max-width:991px){
-    section{padding: 30px 0}
-}
-
 hr{border-style:dashed; border-color: #333}
 
-a{color: #dc3545}
+a{color: #eee}
 a:hover{color: #bd2130}
 
 a[href^="tel:"]:hover {text-decoration: none}
@@ -52,8 +46,8 @@ a[href^="mailto:"]:hover {text-decoration: none}
 
 .cursor{cursor: pointer}
 
-.svg-top{top: -1px; width: 100%}
-.svg-bottom {bottom: -6px; width: 100%}
+.svg-top{top: -2px; left: 0; width: 100%}
+.svg-bottom {bottom: -7px; left: 0; width: 100%}
 
 .font-dosis{font-family: "Dosis", sans-serif}
 
@@ -65,12 +59,11 @@ a[href^="mailto:"]:hover {text-decoration: none}
 }
 
 .no-padding{padding: 0}
-.padding-content{padding: 25px 0 105px 0}
+.padding-content{padding: 105px 0 135px 0}
 
 .bg-header{
-    background:url(../img/bg/bg-header.jpg) no-repeat center;
-    -webkit-background-size: 100% 100%;
-    background-size: cover;
+    background:url(../img/bg/bg-header.jpg) no-repeat top right;
+    background-size: 80%, auto;
     background-attachment: fixed
 }
 
@@ -239,7 +232,7 @@ footer a[href^="tel:"]:hover {color: #bd2130}
     margin:0;
     padding:8px 0 0 0;
     height:38px;
-    background:#bd2130;
+    background:#090909;
     font-size:0.85em!important;
     color:#eee
 }
