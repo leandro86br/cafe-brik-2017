@@ -7,13 +7,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400|Quicksand">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="css/custom.css">
 
 <link rel="icon" type="image/png" href="img/favicon.png">
 
 <title>Caf&eacute; Brik</title>
+
+<script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "Organization",
+"name":"Cafe Brik",
+"url":"http://cafebrik.com.br",
+"logo": "http://cafebrik.com.br/img/logo-black.png",
+"email":"big.expresso@gmail.com.br",
+"telephone" : [ "(11) 4102-7306 ", "(11) 98224-0929" ],
+"address" : {
+    "@type": "PostalAddress",
+    "streetAddress": "rua ",
+    "addressLocality": "S&atilde;o Paulo",
+    "addressRegion": "S&atilde;o Paulo",
+    "postalCode": "cep"
+    }
+}
+</script>
+
 </head>
 
 <body class="animated fadeIn">
@@ -43,7 +61,7 @@
   <header>
     <div class="container">
       <div class="row">
-          <div class="col-md-6 at-sm-center">
+          <div class="col-md-6 text-center text-md-left">
             <div class="logo">
               <a href="index.html"><img src="img/logo-white.png" width="220" alt=""></a>
             </div>
@@ -62,8 +80,8 @@
 
 
 <section>
-  <div class="container">
-    <div class="row align-items-center at-sm-center padding-content">
+  <div class="container padding-content">
+    <div class="row align-items-center text-center text-md-left">
 
       <div class="col-md-6">
         <h1>Venda e Loca&ccedil;&atilde;o de M&aacute;quinas de Caf&eacute;</h1>
@@ -72,7 +90,8 @@
         desde a escolha da m&aacute;quina, do tipo de caf&eacute; e
          x&iacute;caras e treinamento de funcion&aacute;rios.</p>
 
-        <a href="produtos.html" class="btn btn-outline-light btn-sm text-uppercase">Veja nossos produtos</a>
+        <a href="produtos.html" class="btn btn-secondary btn-sm text-uppercase">Veja nossos produtos</a>
+       <br class="d-md-none"><br class="d-md-none">
       </div><!-- col -->
 
       <div class="col-md-6">
@@ -84,7 +103,7 @@
 </section>
 
 
-<section class="bg-paralax">
+<section class="bg-contact">
   <div class="bg-overlay-content">
 
     <!-- svg content -->
@@ -118,19 +137,22 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3 push-down-40">
-        <img src="img/logo-white.png" width="130" alt="">
-      </div><!-- col -->
+           <div class="col-md-3 relative">
+               <img src="img/logo-white.png" class="centralized-logo" width="130" alt="">
+               <br class="d-md-none">
+               <br class="d-md-none">
+           </div><!-- col -->
 
       <div class="col-md-3 border-sides">
         <h4 class="font-dosis">Menu</h4>
-
-        <ul>
-          <li><a href="produtos.html">PRODUTOS</a></li>
-          <li><a href="http://www.icafebrick.com" target="_blank">LOJA VIRTUAL <i class="fa fa-external-link"></i></a></li>
-          <li><a href="sobre-nos.html">SOBRE N&Oacute;S</a></li>
-          <li><a href="contato.html">CONTATO</a></li>
-        </ul>
+            <ul>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="produtos-maquinas.html">M&Aacute;QUINAS DE CAF&Eacute;</a></li>
+            <li><a href="produtos-cafe.html">CAF&Eacute; E COMPLEMENTOS</a></li>
+            <li><a href="http://www.icafebrick.com" target="_blank">LOJA VIRTUAL <i class="fa fa-external-link"></i></a></li>
+            <li><a href="sobre-nos.html">SOBRE N&Oacute;S</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            </ul>
       </div><!-- col -->
 
       <div class="col-md-5">
@@ -166,8 +188,8 @@
   </div><!-- container -->
 </div><!-- footer-bottom -->
 
-<script src="js/functions.js" async></script>
-<script src="https://use.fontawesome.com/8ffc91859c.js" async></script>
+<script src="js/functions.js" defer></script>
+<script src="https://use.fontawesome.com/8ffc91859c.js" defer></script>
 
 </body>
 </html>
